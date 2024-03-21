@@ -1,23 +1,23 @@
 
 import './App.css'
+import Chart from './components/charts/Chart'
+import Chart2 from './components/charts/Chart2'
+
+
+// import DaisuyNav from './components/daisuynav/DaisuyNav'
+import Navber from './components/navber/Navber'
+import Phones from './components/phones/Phones'
+import PriceOptions from './components/priceoptions/PriceOptions'
 
 function App() {
   
   return (
     <>
-      
-      <h1 className='text-4xl font-semibold bg-orange-600'>Vite + React</h1>
-      <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
-  <div className="card-body">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
-      
+      <Navber></Navber>
+      <PriceOptions></PriceOptions>
+      <Chart></Chart>
+      <Chart2></Chart2>
+      <Phones></Phones>
     </>
   )
 }
